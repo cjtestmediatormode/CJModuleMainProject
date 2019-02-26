@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/A_section" "${PODS_ROOT}/Headers/Public/CJA_Category" "${PODS_ROOT}/Headers/Public/CJB_Category" "${PODS_ROOT}/Headers/Public/CJB_Section" "${PODS_ROOT}/Headers/Public/CTMediator"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/A_section" "${PODS_CONFIGURATION_BUILD_DIR}/CJA_Category" "${PODS_CONFIGURATION_BUILD_DIR}/CJB_Category" "${PODS_CONFIGURATION_BUILD_DIR}/CJB_Section" "${PODS_CONFIGURATION_BUILD_DIR}/CTMediator"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/A_section" -isystem "${PODS_ROOT}/Headers/Public/CJA_Category" -isystem "${PODS_ROOT}/Headers/Public/CJB_Category" -isystem "${PODS_ROOT}/Headers/Public/CJB_Section" -isystem "${PODS_ROOT}/Headers/Public/CTMediator"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"A_section" -l"CJA_Category" -l"CJB_Category" -l"CJB_Section" -l"CTMediator" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
