@@ -27,6 +27,7 @@
     //3，feature：功能1模块开发，用于一个业务功能的开发
     //4，hotfix:线上bug修改版本，用于修改线上bug
     //5，master：主干版本。
+
     UIViewController *assion = [[CTMediator sharedInstance] A_SecionInfoWithName:@"我" age:18];
     [self presentViewController:assion animated:YES completion:nil];
 }
