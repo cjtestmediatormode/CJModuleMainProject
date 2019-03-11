@@ -20,6 +20,7 @@
     [self.view addSubview:self.btn];
 }
 - (void)btnClick:(UIButton *)sender {
+    //原则上CJA_Category是分开的，为了方便，可以将CJA_Category和CJB_Category合并在一起
     UIViewController *assion = [[CTMediator sharedInstance] A_SecionInfoWithName:@"我" age:18];
     [self presentViewController:assion animated:YES completion:nil];
 }
