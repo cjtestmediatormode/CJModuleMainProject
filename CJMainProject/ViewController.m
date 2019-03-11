@@ -21,6 +21,12 @@
 }
 - (void)btnClick:(UIButton *)sender {
     //原则上CJA_Category是分开的，为了方便，可以将CJA_Category和CJB_Category合并在一起
+    //创建5个分支
+    //1,develop：开发版本，用于提交开发中的版本
+    //2,release：预上线版本，用于测试过程中的版本，或者即将上线的版本
+    //3，feature：功能1模块开发，用于一个业务功能的开发
+    //4，hotfix:线上bug修改版本，用于修改线上bug
+    //5，master：主干版本。
     UIViewController *assion = [[CTMediator sharedInstance] A_SecionInfoWithName:@"我" age:18];
     [self presentViewController:assion animated:YES completion:nil];
 }
